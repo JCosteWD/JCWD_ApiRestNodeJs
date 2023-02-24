@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const privateKey = require('../auth/private_key')
+const privateKey = require('./private_key')
 
 module.exports = (req, res, next) => {
     // Récupération de l'en-tête HTTP (c'est ici que transitera les jeton JWT des utilisateurs)

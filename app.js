@@ -50,7 +50,7 @@ const favicon = require('serve-favicon')
 const bodyParser = require('body-parser')
 
 // Récupération de sequelize directement via MON fichier dans lequel il a été instancié
-const sequelize = require('./src/db/sequelize')
+const sequelize = require('./src/Db/sequelize')
 
 // Je créé une instance d'express afin de pouvoir l'utiliser
 // C'est grâce à "express" que mon serveur fonctionnera 
@@ -73,12 +73,12 @@ app.get('/', (req, res) => {
 })
 
 // Je placerai ici mes futurs points de terminaison
-require('./src/routes/findAllModules')(app)
-require('./src/routes/findModulesByPk')(app)
-require('./src/routes/createModule')(app)
-require('./src/routes/updateModule')(app)
-require('./src/routes/deleteModule')(app)
-require('./src/routes/login')(app)
+require('./src/Routes/findAllModules')(app)
+require('./src/Routes/findModulesByPk')(app)
+require('./src/Routes/createModule')(app)
+require('./src/Routes/updateModule')(app)
+require('./src/Routes/deleteModule')(app)
+require('./src/Routes/login')(app)
 
 // J'ajoute la gestion des erreurs 404
 app.use(({res}) => {

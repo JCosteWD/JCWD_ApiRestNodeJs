@@ -1,6 +1,6 @@
-const { Module } = require('../db/sequelize')
+const { Module } = require('../Db/sequelize')
 const { ValidationError } = require('sequelize')
-const auth = require('../auth/auth')
+const auth = require('../Auth/auth')
 
 module.exports = (app) => {
     app.post('/api/components', auth, (req, res) => {
