@@ -4,8 +4,8 @@
   "description": "Introduction to NodeJs.",
   "main": "app.js",
   "scripts": {
-    "start": "SET NODE_ENV=production & node app.js",
-    "dev": "SET NODE_ENV=development & nodemon pp.js"
+    "start": "SET NODE_ENV=production & node nodejs/app.js",
+    "dev": "SET NODE_ENV=development & nodemon nodejs/app.js"
   },
   "author": "Julien Coste",
   "license": "ISC",
