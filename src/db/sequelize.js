@@ -3,8 +3,8 @@
 const { Sequelize, DataTypes } = require('sequelize')
 let modules = require('./liste-modules')
 // Récupération de mon fichier model de module
-const moduleModel = require('../Models/module')
-const userModel = require('../Models/user')
+const moduleModel = require('../models/module')
+const userModel = require('../models/user')
 const bcrypt = require('bcrypt')
 
 // Mise en place d'une instance de Sequelize pour la création et la connexion à notre bdd 

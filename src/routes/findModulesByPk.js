@@ -1,5 +1,5 @@
-const { Module } = require('../Db/sequelize')
-const auth = require('../Auth/auth')
+const { Module } = require('../db/sequelize')
+const auth = require('../auth/auth')
 
 module.exports = (app) => {
     app.get('/api/components/:id', auth, (req, res) => {
